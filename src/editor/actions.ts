@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { createAction } from '../actions';
 import { UUID } from '../fileStorage';
 export {

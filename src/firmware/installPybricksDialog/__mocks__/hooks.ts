@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2023 The Pybricks Authors
-
 import type { Hub } from '../../../components/hubPicker';
 
 export function useFirmware(_hubType: Hub) {

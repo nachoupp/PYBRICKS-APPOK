@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
 
 // css files
 @use 'normalize.css/normalize';
@@ -102,13 +100,15 @@ body {
     max-width: 700px;
 
     &.#{bp.$ns}-intent-primary {
-        background-color: pb.$pybricks-blue;
+        background-color: pb.$sumo-neon-blue;
+        color: black; // better contrast on neon blue
 
         & .#{bp.$ns}-button {
-            background-color: pb.$pybricks-blue !important;
+            background-color: pb.$sumo-neon-blue !important;
+            color: black;
 
             &:hover {
-                background: color.adjust(pb.$pybricks-blue, $lightness: -5%) !important;
+                background: color.adjust(pb.$sumo-neon-blue, $lightness: -10%) !important;
             }
         }
     }
@@ -118,19 +118,21 @@ body {
     user-select: none;
 
     &.#{bp.$ns}-intent-primary {
-        background: pb.$pybricks-blue;
+        background: pb.$sumo-neon-blue;
+        color: black;
 
         &.#{bp.$ns}-minimal {
             background: none;
+            color: pb.$sumo-neon-blue;
         }
 
         &:hover {
-            background: color.adjust(pb.$pybricks-blue, $lightness: -5%);
+            background: color.adjust(pb.$sumo-neon-blue, $lightness: -10%);
         }
 
         &:disabled,
         &.#{bp.$ns}-disabled {
-            background: rgba(pb.$pybricks-blue, 0.5);
+            background: rgba(pb.$sumo-neon-blue, 0.5);
         }
     }
 
@@ -158,10 +160,10 @@ a.#{bp.$ns}-button {
 .#{bp.$ns}-control {
     & input:checked ~ .#{bp.$ns}-control-indicator,
     &.#{bp.$ns}-switch input:checked ~ .#{bp.$ns}-control-indicator {
-        background-color: pb.$pybricks-blue;
+        background-color: pb.$sumo-neon-blue;
 
         .#{bp.$ns}-dark & {
-            background-color: pb.$pybricks-blue;
+            background-color: pb.$sumo-neon-blue;
         }
     }
 

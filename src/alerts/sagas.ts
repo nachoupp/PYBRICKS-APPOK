@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { eventChannel } from 'redux-saga';
 import { delay, getContext, put, take, takeEvery } from 'typed-redux-saga/macro';
 import { getAlertProps } from '../alerts';

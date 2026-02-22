@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 import {
     Button,
     Classes,

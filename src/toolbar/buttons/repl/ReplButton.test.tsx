@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2024 The Pybricks Authors
-
 import { act, cleanup } from '@testing-library/react';
 import React from 'react';
 import { FocusScope } from 'react-aria';

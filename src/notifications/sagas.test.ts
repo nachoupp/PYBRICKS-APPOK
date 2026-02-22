@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2023 The Pybricks Authors
-
 import type { ToastOptions, Toaster } from '@blueprintjs/core';
 import { FirmwareReaderError, FirmwareReaderErrorCode } from '@pybricks/firmware';
 import { mock } from 'jest-mock-extended';

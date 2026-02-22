@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 // Saga for managing notifications (toasts)
 
 import { ActionProps, Intent, LinkProps } from '@blueprintjs/core';

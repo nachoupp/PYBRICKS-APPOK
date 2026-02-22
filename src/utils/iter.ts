@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020 The Pybricks Authors
-
 /**
  * Creates an iterator that counts infinitely (to Number.MAX_SAFE_INTEGER really)
  * starting from 0.

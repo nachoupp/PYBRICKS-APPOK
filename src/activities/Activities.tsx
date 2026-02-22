@@ -1,9 +1,6 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import './activities.scss';
 import { Icon, Tab, Tabs } from '@blueprintjs/core';
-import { Cog, Document } from '@blueprintjs/icons';
+import { Cog, Duplicate } from '@blueprintjs/icons';
 import React, { useCallback, useEffect, useRef } from 'react';
 import Explorer from '../explorer/Explorer';
 import Settings from '../settings/Settings';
@@ -115,7 +112,7 @@ const Activities: React.FunctionComponent = () => {
                 title={
                     <Icon
                         htmlTitle={i18n.translate('explorer')}
-                        icon={<Document size={35} />}
+                        icon={<Duplicate size={35} />}
                     />
                 }
                 panel={<Explorer />}

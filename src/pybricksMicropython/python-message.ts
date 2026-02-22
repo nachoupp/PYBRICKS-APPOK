@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { createAction } from '../actions';
 
 // NB: although we are using the same action creator as we do for redux, these

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2023 The Pybricks Authors
-
 // provides translation for notification text
 
 import { Replacements } from '@shopify/react-i18n';

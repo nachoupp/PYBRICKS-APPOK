@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 const encoder = new TextEncoder();
 
 export async function sha256Digest(data: string): Promise<string> {

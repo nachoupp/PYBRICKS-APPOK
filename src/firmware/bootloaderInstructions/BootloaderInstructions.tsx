@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 import './bootloaderInstructions.scss';
 import { Callout, Intent } from '@blueprintjs/core';
 import { WarningSign } from '@blueprintjs/icons';
@@ -11,7 +8,6 @@ import {
     legoRegisteredTrademark,
     pybricksUsbLinuxUdevRulesUrl,
 } from '../../app/constants';
-import ExternalLinkIcon from '../../components/ExternalLinkIcon';
 import { Hub, hubHasBluetoothButton, hubHasUSB } from '../../components/hubPicker';
 import { isLinux, isWindows } from '../../utils/os';
 import { firmwareDfuWindowsDriverInstallDialogDialogShow } from '../dfuWindowsDriverInstallDialog/actions';
@@ -424,7 +420,6 @@ const BootloaderInstructions: React.FunctionComponent<BootloaderInstructionsProp
                                 >
                                     {i18n.translate('warning.linux.learnMore')}
                                 </a>
-                                <ExternalLinkIcon />
                             </>
                         ),
                     })}

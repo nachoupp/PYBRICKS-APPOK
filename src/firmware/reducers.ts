@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2026 The Pybricks Authors
-
 import { Reducer, combineReducers } from 'redux';
 import {
     firmwareDidFailToFlashUsbDfu,

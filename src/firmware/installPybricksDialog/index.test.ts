@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2023 The Pybricks Authors
-
 import { validateHubName, validateMetadata } from '.';
 
 describe('validateHubName', () => {

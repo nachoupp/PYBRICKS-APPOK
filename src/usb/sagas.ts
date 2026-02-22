@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2025-2026 The Pybricks Authors
-
 import { firmwareVersion } from '@pybricks/firmware';
 import { AnyAction } from 'redux';
 import { eventChannel } from 'redux-saga';

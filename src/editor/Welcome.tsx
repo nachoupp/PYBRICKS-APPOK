@@ -1,12 +1,9 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 // welcome screen that is shown when no editor is open.
 
 import { Colors } from '@blueprintjs/core';
 import React, { useEffect, useRef } from 'react';
 import Two from 'two.js';
-import { useTernaryDarkMode } from 'usehooks-ts';
+
 import logoSvg from './logo.svg';
 
 const defaultRotation = -Math.PI / 9; // radians
@@ -52,8 +49,8 @@ function reduce(state: State, action: Action): State {
     }
 }
 
-function getFillColor(isDarkMode: boolean): string {
-    return isDarkMode ? Colors.GRAY1 : Colors.GRAY5;
+function getFillColor(): string {
+    return Colors.GRAY1;
 }
 
 type WelcomeProps = {
@@ -66,10 +63,9 @@ const Welcome: React.FunctionComponent<WelcomeProps> = ({ isVisible }) => {
         rotationSpeed: 0,
     });
     const elementRef = useRef<HTMLDivElement>(null);
-    const { isDarkMode } = useTernaryDarkMode();
     const fillColorRef = useRef('');
     // HACK: we don't want to image to flash when switching dark mode
-    fillColorRef.current = getFillColor(isDarkMode);
+    fillColorRef.current = getFillColor();
 
     useEffect(() => {
         if (process.env.NODE_ENV === 'test') {

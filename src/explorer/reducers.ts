@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { combineReducers } from 'redux';
 
 import deleteFileAlert from './deleteFileAlert/reducers';

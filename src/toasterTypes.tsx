@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2023 The Pybricks Authors
-
 import type { ToastProps, Toaster } from '@blueprintjs/core';
 
 /**

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2026 The Pybricks Authors
-
 import { dfuError } from './DfuError';
 import { flashProgress } from './FlashProgress';
 import { noDfuHub } from './NoDfuHub';

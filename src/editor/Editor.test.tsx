@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2023 The Pybricks Authors
-
 import { Classes } from '@blueprintjs/core';
 import { act, cleanup, waitFor } from '@testing-library/react';
 import * as monaco from 'monaco-editor';

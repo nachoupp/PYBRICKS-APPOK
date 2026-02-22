@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
-
 // Ref: https://lego.github.io/lego-ble-wireless-protocol-docs/index.html#lego-hub-boot-loader-service
 
 import { assert, hex } from '../utils';

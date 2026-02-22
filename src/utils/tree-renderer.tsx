@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 /***/
 // react-complex-tree renderers for bluetprintjs integration
 // based on https://github.com/lukasbach/react-complex-tree/blob/239fb0c5f49f3c24e307142fb3d7e828440c3f55/packages/blueprintjs-renderers/src/renderers.tsx

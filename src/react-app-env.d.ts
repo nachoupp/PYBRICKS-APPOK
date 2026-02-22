@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 /// <reference types="node" />
 /// <reference types="react-dom" />
 /// <reference types="user-agent-data-types" />

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2022 The Pybricks Authors
-
 import { createEvent, fireEvent } from '@testing-library/dom';
 import { mock } from 'jest-mock-extended';
 import { AsyncSaga } from '../../test';

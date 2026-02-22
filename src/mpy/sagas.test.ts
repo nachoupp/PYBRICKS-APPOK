@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import path from 'path';
 import { AsyncSaga } from '../../test';
 import { compile, didCompile, didFailToCompile } from './actions';

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2026 The Pybricks Authors
-
 /**
  * Asserts that an assumption is true. This is used to detect programmer errors
  * and should never actually throw in a correctly written program.

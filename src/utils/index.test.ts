@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
-
 import { acquireLock, assert, defined, ensureError, hex, maybe, timestamp } from '.';
 
 test('assert', () => {

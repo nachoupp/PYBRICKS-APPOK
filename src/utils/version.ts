@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021 The Pybricks Authors
-
 import * as semver from 'semver';
 
 /**

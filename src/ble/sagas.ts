@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2026 The Pybricks Authors
 //
 // Manages connection to a Bluetooth Low Energy device running Pybricks firmware.
 

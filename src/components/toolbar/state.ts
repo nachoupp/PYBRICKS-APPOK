@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { createContext, useState } from 'react';
 import type { ToolbarProps } from './types';
 

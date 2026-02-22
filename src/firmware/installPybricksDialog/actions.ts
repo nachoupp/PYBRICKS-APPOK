@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 import { createAction } from '../../actions';
 
 /** Actions that request the install Pybricks firmware dialog to be shown. */

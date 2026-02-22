@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 // mock implementation of serviceWorkerRegistration for testing
 
 type Config = {

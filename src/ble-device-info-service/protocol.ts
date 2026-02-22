@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2025 The Pybricks Authors
 //
 // Pybricks uses the standard Device Info service.
 // Refer to Device Information Service (DIS) at https://www.bluetooth.com/specifications/specs/

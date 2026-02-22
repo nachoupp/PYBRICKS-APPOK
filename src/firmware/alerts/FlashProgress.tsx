@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { Intent, ProgressBar } from '@blueprintjs/core';
 import { Download } from '@blueprintjs/icons';
 import React from 'react';

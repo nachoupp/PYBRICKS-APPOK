@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useDebounce } from 'usehooks-ts';

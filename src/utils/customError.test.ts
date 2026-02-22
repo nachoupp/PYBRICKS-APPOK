@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { CustomError } from './customError';
 
 // all subclasses should be declared like this:

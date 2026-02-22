@@ -1,0 +1,282 @@
+
+@use '../../variables' as pb;
+
+.sumo-logo-container {
+    --sumo-red: #{pb.$sumo-red};
+    --neon-blue: #{pb.$sumo-neon-blue};
+    --tech-black: #{pb.$sumo-tech-black};
+    --anime-white: #{pb.$sumo-anime-white};
+    --border-black: #000000;
+
+    position: relative;
+    width: 320px;
+    height: 320px;
+    border-radius: 4rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 8px solid var(--tech-black);
+    outline: 4px solid var(--border-black);
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+    background: radial-gradient(circle, #FF2D2D 0%, #8B0000 70%, #1A1A1A 100%);
+    user-select: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &.small {
+        width: 35px; // Support toolbar size
+        height: 35px;
+        border-radius: 8px;
+        border-width: 2px;
+        outline: none;
+        box-shadow: none;
+
+        .speed-lines, .robotic-grit, .title-overlay, .type-decal, .wheels {
+            display: none;
+        }
+
+        .robot-head {
+            transform: scale(0.2);
+            
+            .upper-torso {
+                display: none;
+            }
+        }
+    }
+
+    &.disconnected {
+        .eye {
+            background-color: #334155;
+            border-color: #64748b;
+            box-shadow: inset 0 0 5px #475569;
+        }
+        .core-glow {
+            background-color: #64748b;
+            box-shadow: 0 0 5px #475569;
+            animation: none;
+        }
+    }
+
+    .speed-lines {
+        position: absolute;
+        inset: 0;
+        background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.1) 21px, rgba(255, 255, 255, 0.1) 22px);
+    }
+
+    .robotic-grit {
+        position: absolute;
+        inset: 0;
+        background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+        opacity: 0.2;
+        pointer-events: none;
+    }
+
+    .robot-head {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: rotate(-3deg) scale(1.1);
+
+        .head-block {
+            width: 224px;
+            height: 128px;
+            background-color: var(--anime-white);
+            border: 6px solid var(--border-black);
+            border-bottom-width: 8px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: inset 0 -8px 0 rgba(0,0,0,0.1);
+
+            .eye-socket {
+                width: 192px;
+                height: 64px;
+                background-color: var(--tech-black);
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 0 16px;
+                border: 2px solid var(--border-black);
+
+                .eye {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background-color: #1e293b;
+                    border: 4px solid var(--neon-blue);
+                    box-shadow: inset 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
+                    position: relative;
+                    overflow: hidden;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 4px;
+                        left: 4px;
+                        width: 12px;
+                        height: 12px;
+                        background: white;
+                        border-radius: 50%;
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .type-decal {
+                position: absolute;
+                top: -4px;
+                left: 16px;
+                padding: 0 8px;
+                background-color: var(--sumo-red);
+                color: white;
+                font-size: 8px;
+                font-weight: bold;
+                border: 2px solid var(--border-black);
+                font-style: italic;
+                text-transform: uppercase;
+            }
+        }
+
+        .bumper {
+            width: 176px;
+            height: 32px;
+            background-color: var(--tech-black);
+            border: 4px solid var(--border-black);
+            margin-top: -8px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+            position: relative;
+            z-index: 20;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 48px;
+                height: 4px;
+                background: rgba(255,255,255,0.2);
+                border-radius: 2px;
+            }
+        }
+
+        .upper-torso {
+            width: 160px;
+            height: 80px;
+            background-color: var(--anime-white);
+            border-left: 6px solid var(--border-black);
+            border-right: 6px solid var(--border-black);
+            margin-top: -4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 8px;
+
+            .core-node {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 4px solid var(--border-black);
+                background-color: #e2e8f0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+
+                .core-glow {
+                    width: 16px;
+                    height: 16px;
+                    background-color: var(--neon-blue);
+                    border-radius: 50%;
+                    box-shadow: 0 0 15px var(--neon-blue), 0 0 5px var(--neon-blue);
+                    animation: pulse 2s infinite ease-in-out;
+                }
+            }
+        }
+    }
+
+    .wheels {
+        position: absolute;
+        bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 16px;
+
+        .wheel {
+            width: 96px;
+            height: 128px;
+            background-color: var(--tech-black);
+            border-radius: 16px;
+            border: 6px solid var(--border-black);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+
+            .treads {
+                width: 100%;
+                height: 100%;
+                opacity: 0.3;
+                background-image: repeating-linear-gradient(0deg, transparent, transparent 10px, #fff 11px);
+            }
+
+            .sheen {
+                position: absolute;
+                inset: 0;
+            }
+
+            &.left {
+                transform: rotate(-12deg);
+                .sheen { background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); }
+            }
+            &.right {
+                transform: rotate(12deg);
+                .sheen { background: linear-gradient(to left, transparent, rgba(255,255,255,0.1), transparent); }
+            }
+        }
+    }
+
+    .title-overlay {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        .title-badge {
+            display: inline-block;
+            background-color: var(--tech-black);
+            border: 2px solid var(--neon-blue);
+            padding: 4px 16px;
+            transform: skew(-12deg);
+            box-shadow: 0 0 15px var(--neon-blue), 0 0 5px var(--neon-blue);
+
+            h1 {
+                color: var(--neon-blue);
+                font-weight: 900;
+                font-size: 1.25rem;
+                font-style: italic;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin: 0;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(0.9); }
+}

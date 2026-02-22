@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2025 The Pybricks Authors
-
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { toggleBluetooth } from '../../../ble/actions';
@@ -9,8 +6,8 @@ import { BootloaderConnectionState } from '../../../lwp3-bootloader/reducers';
 import { useSelector } from '../../../reducers';
 import { UsbConnectionState } from '../../../usb/reducers';
 import ActionButton, { ActionButtonProps } from '../../ActionButton';
-import connectedIcon from './connected.svg';
-import disconnectedIcon from './disconnected.svg';
+import { ReactComponent as ConnectedIcon } from './connected.svg';
+import { ReactComponent as DisconnectedIcon } from './disconnected.svg';
 import { useI18n } from './i18n';
 
 type BluetoothButtonProps = Pick<ActionButtonProps, 'id'>;
@@ -29,18 +26,22 @@ const BluetoothButton: React.FunctionComponent<BluetoothButtonProps> = ({ id }) 
     const i18n = useI18n();
     const dispatch = useDispatch();
 
+    let tooltipKey: 'tooltip.disconnect' | 'tooltip.connect' | 'tooltip.usbConnected' =
+        'tooltip.disconnect';
+    if (usbConnection !== UsbConnectionState.Disconnected) {
+        tooltipKey = 'tooltip.usbConnected';
+    } else if (isBluetoothDisconnected) {
+        tooltipKey = 'tooltip.connect';
+    }
+
+    const tooltip = i18n.translate(tooltipKey);
+
     return (
         <ActionButton
             id={id}
             label={i18n.translate('label')}
-            tooltip={i18n.translate(
-                usbConnection !== UsbConnectionState.Disconnected
-                    ? 'tooltip.usbConnected'
-                    : isBluetoothDisconnected
-                      ? 'tooltip.connect'
-                      : 'tooltip.disconnect',
-            )}
-            icon={isBluetoothDisconnected ? disconnectedIcon : connectedIcon}
+            tooltip={tooltip}
+            icon={isBluetoothDisconnected ? <DisconnectedIcon /> : <ConnectedIcon />}
             enabled={
                 isEverythingDisconnected ||
                 bleConnection === BleConnectionState.Connected

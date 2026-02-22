@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 // exposes some monaco editor internal functions
 
 import {} from 'monaco-editor';

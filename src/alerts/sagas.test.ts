@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { ToastOptions, ToastProps, Toaster } from '@blueprintjs/core';
 import { waitFor } from '@testing-library/dom';
 import { AsyncSaga } from '../../test';

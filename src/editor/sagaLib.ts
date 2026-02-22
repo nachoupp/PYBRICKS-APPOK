@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { SagaGenerator, getContext, put, select, take } from 'typed-redux-saga/macro';
 import { RootState } from '../reducers';
 import { editorGetValueRequest, editorGetValueResponse } from './actions';

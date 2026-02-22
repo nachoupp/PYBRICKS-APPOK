@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { Classes, Icon, IconSize, Spinner } from '@blueprintjs/core';
 import { mergeRefs, useId } from '@react-aria/utils';
 import classNames from 'classnames';

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2024 The Pybricks Authors
-
 import PushStream from 'zen-push';
 import { AsyncSaga, delay } from '../../test';
 import {

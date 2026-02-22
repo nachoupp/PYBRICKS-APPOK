@@ -1,12 +1,8 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import './index.scss';
 import { AnchorButton, Button, Intent } from '@blueprintjs/core';
 import { Download, Help, InfoSign } from '@blueprintjs/icons';
 import React from 'react';
 import { pybricksBluetoothTroubleshootingUrl } from '../../app/constants';
-import ExternalLinkIcon from '../../components/ExternalLinkIcon';
 import type { CreateToast } from '../../toasterTypes';
 import { useI18n } from './i18n';
 
@@ -32,7 +28,6 @@ const NoHub: React.FunctionComponent<NoHubProps> = ({ onFlashFirmware }) => {
                     rel="noopener"
                 >
                     {i18n.translate('noHub.troubleshootButton')}
-                    <ExternalLinkIcon />
                 </AnchorButton>
             </div>
         </>

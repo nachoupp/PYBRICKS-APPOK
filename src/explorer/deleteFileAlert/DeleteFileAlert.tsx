@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { Alert, Classes, Intent } from '@blueprintjs/core';
 import { Trash } from '@blueprintjs/icons';
 import React, { useCallback } from 'react';

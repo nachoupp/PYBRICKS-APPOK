@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 declare module 'two.js/src/utils/path-commands' {

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 import { MockProxy, mock } from 'jest-mock-extended';
 import { AsyncSaga } from '../../test';
 import { alertsDidShowAlert, alertsShowAlert } from '../alerts/actions';

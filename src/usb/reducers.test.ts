@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2025 The Pybricks Authors
-
 import { AnyAction } from 'redux';
 import { PnpIdVendorIdSource } from '../ble-device-info-service/protocol';
 import {

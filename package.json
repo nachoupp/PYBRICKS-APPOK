@@ -2,7 +2,7 @@
     "name": "@pybricks/pybricks-code",
     "version": "2.3.0-beta.1",
     "license": "MIT",
-    "author": "The Pybricks Authors",
+    "author": "SUMO",
     "repository": {
         "type": "git",
         "url": "https://github.com/pybricks/pybricks-code"
@@ -51,11 +51,10 @@
         "browser-fs-access": "^0.38.0",
         "browserslist": "^4.22.2",
         "camelcase": "^8.0.0",
-
         "case-sensitive-paths-webpack-plugin": "^2.4.0",
         "copy-webpack-plugin": "^12.0.2",
-                "css-loader": "^6.9.1",
-                "css-minimizer-webpack-plugin": "^6.0.0",
+        "css-loader": "^6.9.1",
+        "css-minimizer-webpack-plugin": "^6.0.0",
         "dexie": "^3.2.4",
         "dexie-observable": "^4.0.0-beta.13",
         "dexie-react-hooks": "^1.1.7",

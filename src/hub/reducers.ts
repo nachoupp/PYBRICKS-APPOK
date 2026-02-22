@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2025 The Pybricks Authors
-
 import { Reducer, combineReducers } from 'redux';
 import * as semver from 'semver';
 import {

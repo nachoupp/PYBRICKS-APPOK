@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
-
 import { Action } from 'redux';
 import { createAction } from '../actions';
 import { Command, HubType, ProtectionLevel, Result } from './protocol';

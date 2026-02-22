@@ -1,8 +1,5 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2022 The Pybricks Authors
-
 import { eventChannel } from 'redux-saga';
-import { call, delay, fork, put, take, takeEvery } from 'typed-redux-saga/macro';
+import { call, fork, put, take, takeEvery } from 'typed-redux-saga/macro';
 import { alertsShowAlert } from '../alerts/actions';
 import {
     serviceWorkerDidSucceed,
@@ -138,22 +135,8 @@ function* monitorBeforeInstallPrompt(): Generator {
     }
 }
 
-// istabul ignore next: for dev environment only
-function* fakeCheckForUpdate(): Generator {
-    console.warn('checking for updates is not supported in development mode');
-    // let the "busy" indication spin for a bit
-    yield* delay(3000);
-    // then indicate we are already up-to-date
-    yield* put(appDidCheckForUpdate(false));
-}
-
 export default function* app(): Generator {
     yield* fork(monitorServiceWorkerRegistration);
     yield* fork(monitorAppInstalled);
     yield* fork(monitorBeforeInstallPrompt);
-
-    // istabul ignore if: for dev environment only
-    if (process.env.NODE_ENV === 'development') {
-        yield* takeEvery(appCheckForUpdate, fakeCheckForUpdate);
-    }
 }

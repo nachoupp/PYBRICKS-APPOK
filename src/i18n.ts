@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import { I18n, I18nManager, TranslateOptions } from '@shopify/react-i18n';
 import type {
     ComplexReplacementDictionary,
@@ -15,12 +12,6 @@ export const i18nManager = new I18nManager({
     locale: 'en',
     onError: (err): void => console.error(err),
 });
-
-// istanbul ignore next
-/** Enables or disables pseudolocalization for development. */
-export function pseudolocalize(pseudolocalize: boolean): void {
-    i18nManager.update({ ...i18nManager.details, pseudolocalize });
-}
 
 // brilliant magic to turn nested json keys into types
 // https://newbedev.com/typescript-deep-keyof-of-a-nested-object

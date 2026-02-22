@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import type { DatabaseChangeType, IDatabaseChange } from 'dexie-observable/api';
 import * as monaco from 'monaco-editor';
 import { EventChannel, Task, buffers, eventChannel } from 'redux-saga';

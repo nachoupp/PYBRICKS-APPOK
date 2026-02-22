@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 import './installPybricksDialog.scss';
 import {
     Button,
@@ -35,7 +32,6 @@ import {
     zipFileExtension,
     zipFileMimeType,
 } from '../../app/constants';
-import HelpButton from '../../components/HelpButton';
 import { Hub, hubBootloaderType } from '../../components/hubPicker';
 import { HubPicker } from '../../components/hubPicker/HubPicker';
 import { useHubPickerSelectedHub } from '../../components/hubPicker/hooks';
@@ -422,10 +418,6 @@ const ConfigureOptionsPanel: React.FunctionComponent<SelectOptionsPanelProps> = 
                                 />
                             )
                         }
-                    />
-                    <HelpButton
-                        helpForLabel={i18n.translate('optionsPanel.hubName.label')}
-                        content={i18n.translate('optionsPanel.hubName.help')}
                     />
                 </ControlGroup>
             </FormGroup>

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import { compile as mpyCrossCompileV5 } from '@pybricks/mpy-cross-v5';
 import { compile as mpyCrossCompileV6 } from '@pybricks/mpy-cross-v6';
 import { call, getContext, put, select, takeEvery } from 'typed-redux-saga/macro';

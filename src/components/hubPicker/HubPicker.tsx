@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 import './hubPicker.scss';
 import { Radio, RadioGroup } from '@blueprintjs/core';
 import React from 'react';

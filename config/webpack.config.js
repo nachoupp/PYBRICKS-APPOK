@@ -580,14 +580,6 @@ module.exports = function (webpackEnv) {
           },
         ],
       }),
-      new CopyPlugin({
-        patterns: [
-          {
-            from: `${path.dirname(require.resolve('@pybricks/ide-docs/package.json'))}/html`,
-            to: `static/docs/v${require('@pybricks/ide-docs/package.json').version}/`,
-          },
-        ],
-      }),
       new PyodidePlugin({
         outDirectory: pyodideStaticPath,
         packageIndexUrl: '',

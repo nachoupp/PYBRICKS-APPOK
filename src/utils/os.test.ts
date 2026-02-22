@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2022 The Pybricks Authors
-
 import { isAndroid, isIOS, isLinux, isMacOS, isWindows } from './os';
 import { defined } from '.';
 

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2025-2026 The Pybricks Authors
-
 import { accessDenied } from './AccessDenied';
 import { alreadyInUse } from './AlreadyInUse';
 import { newPybricksProfile } from './NewPybricksProfile';

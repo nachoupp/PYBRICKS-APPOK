@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2025 The Pybricks Authors
-
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { BleConnectionState } from '../../../ble/reducers';

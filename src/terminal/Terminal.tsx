@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import 'xterm/css/xterm.css';
 import './terminal.scss';
 import {
@@ -13,7 +10,6 @@ import {
 import { Blank, Clipboard, Duplicate, Trash } from '@blueprintjs/icons';
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { useTernaryDarkMode } from 'usehooks-ts';
 import { Terminal as XTerm } from 'xterm';
 import { FitAddon } from 'xterm-addon-fit';
 import { isMacOS } from '../utils/os';
@@ -117,7 +113,6 @@ const ContextMenuContent: React.FunctionComponent<ContextMenuContentProps> = ({
 const Terminal: React.FunctionComponent = () => {
     const { xterm, fitAddon } = useMemo(createXTerm, [createXTerm]);
     const terminalRef = useRef<HTMLDivElement>(null);
-    const { isDarkMode } = useTernaryDarkMode();
     const dispatch = useDispatch();
     const terminalStream = useContext(TerminalContext);
 
@@ -141,18 +136,16 @@ const Terminal: React.FunctionComponent = () => {
         return () => xterm.dispose();
     }, [xterm, fitAddon]);
 
-    // wire up isDarkMode to terminal
+    // always use dark mode theme for terminal
     useEffect(() => {
         xterm.options.theme = {
-            background: isDarkMode ? 'black' : 'white',
-            foreground: isDarkMode ? 'white' : 'black',
-            cursor: isDarkMode ? 'white' : 'black',
+            background: 'black',
+            foreground: 'white',
+            cursor: 'white',
             // transparency is needed to work around https://github.com/xtermjs/xterm.js/issues/2808
-            selectionBackground: isDarkMode
-                ? 'rgb(81,81,81,0.5)'
-                : 'rgba(181,213,255,0.5)', // this should match editor theme
+            selectionBackground: 'rgb(81,81,81,0.5)', // this should match editor theme
         };
-    }, [isDarkMode, xterm]);
+    }, [xterm]);
 
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent): void => {

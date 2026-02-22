@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import dexieObservable from 'dexie-observable';
 import type * as monaco from 'monaco-editor';
 import { UUID } from '../fileStorage';

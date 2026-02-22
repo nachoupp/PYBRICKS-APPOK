@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2026 The Pybricks Authors
 // based on https://usehooks-ts.com/react-hook/use-fetch
 
 import { FirmwareMetadata, FirmwareReader } from '@pybricks/firmware';

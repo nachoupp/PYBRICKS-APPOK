@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2025 The Pybricks Authors
-
 import './status-bar.scss';
 import {
     Button,
@@ -16,6 +13,7 @@ import {
 import { Disable, Error, TickCircle } from '@blueprintjs/icons';
 import classNames from 'classnames';
 import React, { useMemo } from 'react';
+import { SumoLogo } from '../components/SumoLogo/SumoLogo';
 import { CompletionEngineStatus } from '../editor/redux/codeCompletion';
 import { HubRuntimeState } from '../hub/reducers';
 import { useSelector } from '../reducers';
@@ -153,6 +151,7 @@ const StatusBar: React.FunctionComponent = () => {
             aria-live="off"
         >
             <div className="pb-status-bar-group">
+                <SumoLogo small={true} className="m-1" />
                 <CompletionEngineIndicator />
             </div>
             <div className="pb-status-bar-group">

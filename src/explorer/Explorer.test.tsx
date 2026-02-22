@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { act, cleanup, waitFor } from '@testing-library/react';
 import React from 'react';
 import { testRender, uuid } from '../../test';

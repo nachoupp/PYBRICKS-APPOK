@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2024 The Pybricks Authors
-
 import { createAction } from '../actions';
 import { FileFormat } from '../ble-pybricks-service/protocol';
 

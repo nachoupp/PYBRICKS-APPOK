@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 /** Supported hub types. */
 export enum Hub {
     /** BOOST Move hub */

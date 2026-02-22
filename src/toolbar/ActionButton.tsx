@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import {
     Button,
     Classes,
@@ -28,7 +25,7 @@ export interface ActionButtonProps {
     /** Tooltip text that appears when hovering over the button. */
     readonly tooltip: string;
     /** Icon shown on the button. */
-    readonly icon: string;
+    readonly icon: string | React.ReactNode;
     /** When true or undefined, the button is enabled. */
     readonly enabled?: boolean;
     /** When true, show progress indicator instead of icon. */
@@ -128,12 +125,26 @@ const ActionButton: React.FunctionComponent<ActionButtonProps> = ({
                             size={buttonSize}
                         />
                     ) : (
-                        <img
-                            aria-hidden={true}
-                            width={`${buttonSize}px`}
-                            height={`${buttonSize}px`}
-                            src={icon}
-                        />
+                        <div
+                            style={{
+                                width: `${buttonSize}px`,
+                                height: `${buttonSize}px`,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}
+                        >
+                            {typeof icon === 'string' ? (
+                                <img
+                                    aria-hidden={true}
+                                    width={`${buttonSize}px`}
+                                    height={`${buttonSize}px`}
+                                    src={icon}
+                                />
+                            ) : (
+                                icon
+                            )}
+                        </div>
                     )}
                 </Button>
             )}

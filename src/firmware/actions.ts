@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2026 The Pybricks Authors
-
 import { FirmwareReaderError, HubType } from '@pybricks/firmware';
 import { createAction } from '../actions';
 import { Hub } from '../components/hubPicker';

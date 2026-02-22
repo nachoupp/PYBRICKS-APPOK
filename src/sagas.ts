@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2025 The Pybricks Authors
-
 import { eventChannel } from 'redux-saga';
 import { all, spawn, take } from 'typed-redux-saga/macro';
 import alerts, { AlertsSagaContext } from './alerts/sagas';

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2024 The Pybricks Authors
-
 import { AsyncSaga } from '../../test';
 import { alertsShowAlert } from '../alerts/actions';
 import { didWrite, write } from '../ble-nordic-uart-service/actions';

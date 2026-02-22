@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 // This file runs as a web worker.
 
 // NB: We need to be very careful about imports here since many libraries for

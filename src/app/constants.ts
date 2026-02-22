@@ -1,7 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2026 The Pybricks Authors
-import docsPackage from '@pybricks/ide-docs/package.json';
-
 // Definitions for compile-time UI settings.
 
 /** The official Pybricks blue color. */
@@ -49,7 +45,6 @@ export const pybricksUsbLinuxUdevRulesUrl =
     'https://pybricks.com/projects/tutorials/dev/tools/linux/';
 
 /** Pybricks copyright statement. */
-export const pybricksCopyright = 'Copyright (c) 2020-2026 The Pybricks Authors';
 
 /** The LEGO name with registered trademark symbol. */
 export const legoRegisteredTrademark = 'LEGO®';
@@ -75,12 +70,6 @@ export const legoDisclaimer =
  *      Cross-Origin-Embedder-Policy: require-corp
  */
 export const httpServerHeadersVersion = 2;
-
-/** Path to directory where docs are copied by webpack. */
-export const docsPathPrefix = `static/docs/v${docsPackage.version}/`;
-
-/** The index page of the docs. */
-export const docsDefaultPage = `${docsPathPrefix}index.html`;
 
 /** The ZIP file extension ('.zip') */
 export const zipFileExtension = '.zip';

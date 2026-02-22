@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
-
 import { takeEvery } from 'typed-redux-saga/macro';
 import { didFailToWrite as bleUartDidFailToWrite } from '../ble-nordic-uart-service/actions';
 import { eventProtocolError as pybricksEventProtocolError } from '../ble-pybricks-service/actions';

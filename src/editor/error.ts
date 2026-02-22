@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { CustomError } from '../utils/customError';
 
 /** Specific errors for editor subsystem. */

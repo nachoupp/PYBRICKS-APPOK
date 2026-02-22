@@ -1,8 +1,5 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import 'dexie-observable';
-import Dexie, { Table } from 'dexie';
+import { Dexie, Table } from 'dexie';
 import type * as monaco from 'monaco-editor';
 
 /** Type to avoid mixing UUID with regular string. */

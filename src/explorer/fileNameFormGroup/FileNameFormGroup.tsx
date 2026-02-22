@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { Classes, Code, FormGroup, InputGroup, Intent, Tag } from '@blueprintjs/core';
 import type { AriaButtonProps } from '@react-types/button';
 import React, { useCallback, useRef } from 'react';

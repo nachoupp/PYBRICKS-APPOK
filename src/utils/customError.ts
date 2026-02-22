@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 export class CustomError<T extends string> extends Error {
     declare name: T;
 

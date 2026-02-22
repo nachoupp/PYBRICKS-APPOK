@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2021-2022 The Pybricks Authors
-
 // Utility functions for dealing with operating systems.
 
 /**

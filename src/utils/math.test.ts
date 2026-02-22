@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
-
 import { crc32, fmod, sumComplement32, xor8 } from './math';
 
 describe('fmod', () => {

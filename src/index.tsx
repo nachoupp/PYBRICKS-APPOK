@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import './index.scss';
 import { HotkeysProvider, OverlayToaster } from '@blueprintjs/core';
 import { configureStore } from '@reduxjs/toolkit';

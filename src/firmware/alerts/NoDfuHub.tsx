@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import { AnchorButton, Button, Intent } from '@blueprintjs/core';
 import { Download, Help, InfoSign } from '@blueprintjs/icons';
 import React from 'react';
@@ -8,7 +5,6 @@ import {
     pybricksUsbDfuTroubleshootingUrl,
     pybricksUsbLinuxUdevRulesUrl,
 } from '../../app/constants';
-import ExternalLinkIcon from '../../components/ExternalLinkIcon';
 import type { CreateToast } from '../../toasterTypes';
 import { isLinux, isWindows } from '../../utils/os';
 import { useI18n } from './i18n';
@@ -42,7 +38,6 @@ const NoDfuHub: React.FunctionComponent<NoDfuHubProps> = ({
                         rel="noopener"
                     >
                         {i18n.translate('noDfuHub.configureUdevRulesButton')}
-                        <ExternalLinkIcon />
                     </AnchorButton>
                 )}
                 <AnchorButton
@@ -52,7 +47,6 @@ const NoDfuHub: React.FunctionComponent<NoDfuHubProps> = ({
                     rel="noopener"
                 >
                     {i18n.translate('noDfuHub.troubleshootButton')}
-                    <ExternalLinkIcon />
                 </AnchorButton>
             </div>
         </>

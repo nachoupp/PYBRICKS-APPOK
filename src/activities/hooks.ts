@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { useEffect } from 'react';
 import { useEffectOnce, useLocalStorage, useSessionStorage } from 'usehooks-ts';
 

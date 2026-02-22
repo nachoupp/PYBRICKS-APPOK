@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
 //
 // Definitions related to the nRF UART Bluetooth low energy GATT service.
 //

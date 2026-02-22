@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
 //
 // Actions for Bluetooth Low Energy Nordic UART service
 

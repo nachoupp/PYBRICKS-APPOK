@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2025 The Pybricks Authors
-
 import { Toast } from '@blueprintjs/core';
 import { act } from '@testing-library/react';
 import React from 'react';

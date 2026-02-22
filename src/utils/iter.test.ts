@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020 The Pybricks Authors
-
 import { count, createCountFunc } from './iter';
 
 test('count', () => {

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022 The Pybricks Authors
-
 import { mock } from 'jest-mock-extended';
 import type * as monaco from 'monaco-editor';
 import { uuid } from '../../test';

@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import React, { PropsWithChildren } from 'react';
 import { FocusScope } from 'react-aria';
 import { useToolbar } from './aria';

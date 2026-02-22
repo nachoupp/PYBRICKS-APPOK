@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2023 The Pybricks Authors
-
 import './editor.scss';
 import {
     Button,
@@ -16,15 +13,7 @@ import {
     Tabs,
     Text,
 } from '@blueprintjs/core';
-import {
-    Blank,
-    Clipboard,
-    Cross,
-    Duplicate,
-    Manual,
-    Redo,
-    Undo,
-} from '@blueprintjs/icons';
+import { Blank, Clipboard, Cross, Duplicate, Redo, Undo } from '@blueprintjs/icons';
 import classNames from 'classnames';
 import * as monaco from 'monaco-editor';
 import tomorrowNightEightiesTheme from 'monaco-themes/themes/Tomorrow-Night-Eighties.json';
@@ -32,12 +21,11 @@ import xcodeTheme from 'monaco-themes/themes/Xcode_default.json';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useId } from 'react-aria';
 import { useDispatch } from 'react-redux';
-import { useEffectOnce, useTernaryDarkMode } from 'usehooks-ts';
+import { useEffectOnce } from 'usehooks-ts';
 import { UUID } from '../fileStorage';
 import { useFileStoragePath } from '../fileStorage/hooks';
 import { compile } from '../mpy/actions';
 import { useSelector } from '../reducers';
-import { useSettingIsShowDocsEnabled } from '../settings/hooks';
 import { isMacOS } from '../utils/os';
 import Welcome from './Welcome';
 import { editorActivateFile, editorCloseFile } from './actions';
@@ -389,15 +377,12 @@ const Editor: React.FunctionComponent = () => {
     const dispatch = useDispatch();
 
     const [editor, setEditor] = useState<monaco.editor.IStandaloneCodeEditor>();
-    const { isSettingShowDocsEnabled, toggleIsSettingShowDocsEnabled } =
-        useSettingIsShowDocsEnabled();
-    const { isDarkMode } = useTernaryDarkMode();
 
     const i18n = useI18n();
 
     useEffect(() => {
-        monaco.editor.setTheme(isDarkMode ? tomorrowNightEightiesId : xcodeId);
-    }, [isDarkMode]);
+        monaco.editor.setTheme(tomorrowNightEightiesId);
+    }, []);
 
     useEditor(
         editor,
@@ -409,17 +394,6 @@ const Editor: React.FunctionComponent = () => {
             return () => contrib.dispose();
         },
         [i18n],
-    );
-
-    useEditorAction(
-        editor,
-        () => ({
-            id: 'pybricks.action.toggleDocs',
-            label: i18n.translate('toggleDocs'),
-            run: () => toggleIsSettingShowDocsEnabled(),
-            keybindings: [monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyD],
-        }),
-        [i18n, toggleIsSettingShowDocsEnabled],
     );
 
     useEditorAction(
@@ -523,18 +497,6 @@ const Editor: React.FunctionComponent = () => {
                     <div className="pb-editor-monaco" ref={editorRef} />
                 </ContextMenu>
             </ResizeSensor>
-            <Button
-                className="pb-editor-doc-button"
-                minimal
-                large
-                icon={<Manual />}
-                title={
-                    isSettingShowDocsEnabled
-                        ? i18n.translate('docs.hide')
-                        : i18n.translate('docs.show')
-                }
-                onClick={toggleIsSettingShowDocsEnabled}
-            />
         </div>
     );
 };

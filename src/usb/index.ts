@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2025 The Pybricks Authors
-
 // https://github.com/pybricks/technical-info/blob/master/assigned-numbers.md#usb
 
 /** Official LEGO USB Vendor ID (VID) */

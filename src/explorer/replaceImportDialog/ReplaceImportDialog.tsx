@@ -1,6 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2022-2023 The Pybricks Authors
-
 import './replaceImportDialog.scss';
 import { Button, Checkbox, Classes, Dialog, Intent } from '@blueprintjs/core';
 import React, { useCallback, useState } from 'react';

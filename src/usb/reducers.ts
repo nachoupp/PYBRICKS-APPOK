@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2025 The Pybricks Authors
 //
 // Manages state for the USB connection.
 // This assumes that there is only one global connection to a single device.

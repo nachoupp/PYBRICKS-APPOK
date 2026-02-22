@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-// Copyright (c) 2020-2022 The Pybricks Authors
 
 @use 'sass:color';
 @use '@blueprintjs/core/lib/scss/variables' as bp;
@@ -11,6 +9,12 @@ $narrow-screen-limit: 700px;
 
 // Official Pybricks branding color.
 $pybricks-blue: #0088ce;
+
+// Sumo Bot Anime Theme Colors
+$sumo-red: #FF2D2D;
+$sumo-neon-blue: #00F0FF;
+$sumo-tech-black: #1A1A1A;
+$sumo-anime-white: #F0F0F0;
 
 // blueprint doesn't define this
 $pt-dark-outline-color: rgba(bp.$blue5, 0.6);
